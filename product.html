@@ -1,227 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <title>P02</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product</title>
-  <link rel="stylesheet" href="css/styles.css"/>
+
+  <!--CSS-->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!--FONT-->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
 <body>
-  <header>  <figure class="brand">My Shop</figure>
-    <nav class="menu">
-
-      <input type="checkbox" id="menuToggle">
-      <label for="menuToggle" class="menu-icon"><img src="images/dot.png"></label>
-      <ul>
-        <li><a href='index.html'>
-          Home</a>
-        </li>
-        <li>
-          <a href='product.html'>Product</a>
-        </li>
-        <li class="sepli">
-          <a href='#'><img src="images/cart.png" width="23"></a>
-        </li>
-        <li>
-          <a href='#'>aboutus</a>
-        </li>
-
+  <header>
+    <nav class="nav-style">
+      <a href="index.html"><img  src="images/logo.png" class="logo" alt="logo"/></a>
+      <p class="width-adjust"></p>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html"  class="nav-button">HOME</a></li>
+        <li><a href="product.html" class="nav-button current-link">PRODUCT</a></li>
+        <li><a href="concept.html" class="nav-button">ABOUT</a></li>
+        <li><a href="cart.html" class="nav-button">CART<!--<img src="images/cart.png" width="25">--></a></li>
       </ul>
     </nav>
   </header>
+
   <div id="productwrap">
     <p>"Enjoy Life. Eat Cake." </p>
-
-  </div>
-  <div id="MainBox" class="clear" >
-    <div class="sideBox">
-      <div class="leftbox" >
-        <div class="boxPic">
-          <img src="images/shanshui.jpg" class="img-xyz">
-        </div>
-      </div>
-
-      <div class="rightbox">
-        <p class="boxTxt">Shan Shui</p>
-        <p class="title"style="
-        padding-top: 30px;">Ingredients</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">Tieguanyin Oolong Tea Mousse | White Chocolate Mousse | Lemon Sponge Cake | Kumquat Pate de Fruit Sable | White Glaze | Sugar Fondant Flower | Tea Dacquoise</p>
-        <p class="title"style="
-        padding-top: 30px;">Serving Size</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">For 6-10 person</p>
-        <span class="boxPrice" ><h4 style="
-        padding-top: 20px;">750.00</h4></span>
-        <span class="presentationBox">
-          <input type="text" name="Quantity" value="Quantity"style="vertical-align: middle " />
-          <a href="#">+ ADD</a>
-        </span>
-
-      </div>
-    </div>
-
-    <div class="sideBox">
-      <div class="leftbox" >
-        <div class="boxPic">
-          <img src="images/waffle.jpg" class="img-xyz">
-        </div>
-      </div>
-
-      <div class="rightbox">
-        <p class="boxTxt">Hong Kong Style Waffle</p>
-        <p class="title"style="
-        padding-top: 30px;">Ingredients</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">Peanut Butter Cremeux | Honey Sponge | Handmade Peanuts Praline | Dulcey Mousse | Salted Shortbread | Whipped Hokkaido Cream | Dulcey Velvet Spray | Dulcey Glaze |
-        Toasted Peanuts</p>
-        <p class="title"style="
-        padding-top: 30px;">Serving Size</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">For 1-2 person</p>
-
-        <span class="boxPrice" ><h4 style="
-        padding-top: 20px;">95.00</h4></span>
-        <span class="presentationBox">
-            <!-- <form> <input type="text" name="Search Field" value="Search"> </form> -->
-          <input type="text" name="Quantity" value="Quantity"style="vertical-align: middle " />
-          <a href="#">+ ADD</a>
-        </span>
-
-      </div>
-    </div>
-
-    <div class="sideBox">
-      <div class="leftbox" >
-        <div class="boxPic">
-          <img src="images/yogurt.jpg" class="img-xyz">
-        </div>
-      </div>
-
-      <div class="rightbox">
-        <p class="boxTxt">Exotic Yogurt Healthy Cake</p>
-        <p class="title"style="
-        padding-top: 30px;">Ingredients</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">Exotic Verbena Mousse | Greek Yogurt Foam |
-
-Yuzu & Mint Marmalae | Trehalose Chiffon Sponge |
-
-Gluten Free Sable
-
-</p>
-        <p class="title"style="
-        padding-top: 30px;">Serving Size</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">For 6-10 person</p>
-        <span class="boxPrice" ><h4 style="
-        padding-top: 20px;">850.00</h4></span>
-        <span class="presentationBox">
-          <input type="text" name="Quantity" value="Quantity"style="vertical-align: middle " />
-          <a href="#">+ ADD</a>
-        </span>
-
-      </div>
-    </div>
-
-  </div>
-  <!--second-->
-  <div id="MainBox" class="clear" >
-    <div class="sideBox">
-      <div class="leftbox" >
-        <div class="boxPic">
-          <img src="images/jade.jpg" class="img-xyz">
-        </div>
-      </div>
-
-      <div class="rightbox">
-        <p class="boxTxt">Jade Bamboo Garden</p>
-        <p class="title"style="
-        padding-top: 30px;">Ingredients</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">Jasmines Mousse | White Wine Fuji Apple Compote |
-
-Biscuit Vanilla | Sablé | Light Green Color Glaze |
-
-Chocolate Bamboo | Silk Tassel (NOT EDIBLE)</p>
-        <p class="title"style="
-        padding-top: 30px;">Serving Size</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">For 5-8 person</p>
-        <span class="boxPrice" ><h4 style="
-        padding-top: 20px;">580.00</h4></span>
-        <span class="presentationBox">
-          <input type="text" name="Quantity" value="Quantity"style="vertical-align: middle " />
-          <a href="#">+ ADD</a>
-        </span>
-
-      </div>
-    </div>
-
-    <div class="sideBox">
-      <div class="leftbox" >
-        <div class="boxPic">
-          <img src="images/pearldragon.jpg" class="img-xyz">
-        </div>
-      </div>
-
-      <div class="rightbox">
-        <p class="boxTxt">Pearl Dragon</p>
-        <p class="title"style="
-        padding-top: 30px;">Ingredients</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">Black Sesame Mousse | Raspberry Mousse
-
-Lemon Sponge | Sablé | Grey Color Glaze | Chocolate Dragon
-
-Sugar Pearl Ball | Silk Tassel (NOT EDIBLE)</p>
-        <p class="title"style="
-        padding-top: 30px;">Serving Size</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">For 5-8 person</p>
-        <span class="boxPrice" ><h4 style="
-        padding-top: 20px;">580.00</h4></span>
-        <span class="presentationBox">
-          <input type="text" name="Quantity" value="Quantity"style="vertical-align: middle " />
-          <a href="#">+ ADD</a>
-        </span>
-
-      </div>
-    </div>
-
-    <div class="sideBox">
-      <div class="leftbox" >
-        <div class="boxPic">
-          <img src="images/bluelotus.jpg" class="img-xyz">
-        </div>
-      </div>
-
-      <div class="rightbox">
-        <p class="boxTxt">Blue Lotus</p>
-        <p class="title"style="
-        padding-top: 30px;">Ingredients</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">Local Honey Mousse | Lemon Sponge | Lemon Jelly | Light Blue Color Glaze
-
-Almond Dacquoise | Sugar Fondant Flower | Snow Chrysanthemum Mousse</p>
-        <p class="title"style="
-        padding-top: 30px;">Serving Size</p>
-        <p class="ingredients" style="
-        padding-top: 15px;">For 8-10 person</p>
-        <span class="boxPrice" ><h4 style="
-        padding-top: 20px;">750.00</h4></span>
-        <span class="presentationBox">
-          <input type="text" name="Quantity" value="Quantity"style="vertical-align: middle " />
-          <a href="#">+ ADD</a>
-        </span>
-
-      </div>
-    </div>
-
   </div>
 
-  <footer>
-    ©copyright2019
-  </footer>
-</body>
-</html>
+  <section class="product-grid">
+    <div class="row">
+      <div class="col-50">
+        <img src="images/shanshui.jpg" alt="Shan Shui" style="width:100%">
+      </div>
+
+      <div class="col-50">
+        <h1>Shan Shui</h1>
+        <h3>Ingredients</h3>
+        <p class="ingredients">Tieguanyin Oolong Tea Mousse | White Chocolate Mousse | Lemon Sponge Cake | Kumquat Pate de Fruit Sable | White Glaze | Sugar Fondant Flower | Tea Dacquoise</p>
+        <h3>Serving Size</h3>
+        <p class="ingredients">For 6-10 person</p>
+        <h3>$75</h3>
+        <input type="number" name="quantity" value="0" min="1" max="5"/>
+        <a href="checkout.html" class=submit-btn>+ ADD</a>
+      </div>
+    </div>
+
+    <div class="product-row">
+      <div class="col-50">
+        <img src="images/waffle.jpg" alt="Waffle" style="width:100%">
+      </div>
+
+      <div class="col-50">
+        <h1>Hong Kong Style Waffle</h1>
+        <h3>Ingredients</h3>
+        <p class="ingredients">Peanut Butter Cremeux | Honey Sponge | Handmade Peanuts Praline | Dulcey Mousse | Salted Shortbread | Whipped Hokkaido Cream | Dulcey Velvet Spray | Dulcey Glaze |
+          Toasted Peanuts</p>
+          <h3>Serving Size</h3>
+          <p class="ingredients">For 1-2 person</p>
+          <h3>$9.5</h3>
+          <input type="number" name="quantity" value="0" min="1" max="5"/>
+          <a href="checkout.html" class=submit-btn>+ ADD</a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="col-50">
+          <img src="images/yogurt.jpg" alt="Yogurt" style="width:100%">
+        </div>
+
+        <div class="col-50">
+          <h1>Exotic Yogurt Healthy Cake</h1>
+          <h3>Ingredients</h3>
+          <p class="ingredients">Exotic Verbena Mousse | Greek Yogurt Foam | Yuzu & Mint Marmalae | Trehalose Chiffon Sponge | Gluten Free Sable</p>
+          <h3>Serving Size</h3>
+          <p class="ingredients">For 6-10 person</p>
+          <h3>$85</h3>
+          <input type="number" name="quantity" value="0" min="1" max="5"/>
+          <a href="checkout.html" class=submit-btn>+ ADD</a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="col-50">
+          <img src="images/jade.jpg" alt="Jade" style="width:100%">
+        </div>
+
+        <div class="col-50">
+          <h1>Jade Bamboo Garden</h1>
+          <h3>Ingredients</h3>
+          <p class="ingredients">Jasmines Mousse | White Wine Fuji Apple Compote | Biscuit Vanilla | Sablé | Light Green Color Glaze | Chocolate Bamboo | Silk Tassel (NOT EDIBLE)</p>
+          <h3>Serving Size</h3>
+          <p class="ingredients">For 5-8 person</p>
+          <h3>$58</h3>
+          <input type="number" name="quantity" value="0" min="1" max="5"/>
+          <a href="checkout.html" class=submit-btn>+ ADD</a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="col-50">
+          <img src="images/pearldragon.jpg" alt="Pearl Dragon" style="width:100%">
+        </div>
+
+        <div class="col-50">
+          <h1>Pearl Dragon</h1>
+          <h3>Ingredients</h3>
+          <p class="ingredients">Black Sesame Mousse | Raspberry Mousse Lemon Sponge | Sablé | Grey Color Glaze | Chocolate Dragon Sugar Pearl Ball | Silk Tassel (NOT EDIBLE)</p>
+          <h3>Serving Size</h3>
+          <p class="ingredients">For 5-8 person</p>
+          <h3>$58</h3>
+          <input type="number" name="quantity" value="0" min="1" max="5"/>
+          <a href="checkout.html" class=submit-btn>+ ADD</a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="col-50">
+          <img src="images/bluelotus.jpg" alt="Blue Lotus" style="width:100%">
+        </div>
+
+        <div class="col-50">
+          <h1>Blue Lotus</h1>
+          <h3>Ingredients</h3>
+          <p class="ingredients">Local Honey Mousse | Lemon Sponge | Lemon Jelly | Light Blue Color Glaze Almond Dacquoise | Sugar Fondant Flower | Snow Chrysanthemum Mousse</p>
+          <h3>Serving Size</h3>
+          <p class="ingredients">For 8-10 person</p>
+          <h3>$75</h4>
+          <input type="number" name="quantity" value="0" min="1" max="5"/>
+          <a href="checkout.html" class=submit-btn>+ ADD</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="row">
+          <div class="col-25">
+            <h5>CUSTOMER SERVICE</h5>
+            <ul class="footer-links">
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Return & Refund Policy</a></li>
+              <li><a href="#">Usage Instruction</a></li>
+            </ul>
+          </div>
+          <div class="col-25">
+            <h5>ABOUT US</h5>
+            <ul class="footer-links">
+              <li><a href="#">Our Company</a></li>
+              <li><a href="#">Store location</a></li>
+            </ul>
+          </div>
+          <div class="col-25">
+            <h5>PROJECT LINK</h5>
+            <ul class="footer-links">
+              <li><a href="styleguide.html">Style Guide</a></li>
+              <li><a href="https://github.com/joyanjoanne/company">Git Repository</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <p class=parastyle>Copyright & copy; 2019 All Rights Reserved by Joanne Fung & Ivonne Fedora.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
