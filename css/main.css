@@ -279,11 +279,10 @@ p, ol, ul, a, label {
 	color: #666666;
 }
 
-#productwrap p{
+#productwrap h1{
 		padding-left: 10em;
 		padding-right: 10em;
-		padding-top: 10em;
-		padding-bottom:  5em;
+		padding-bottom:  3em;
 
 		line-height: 1.6;
 		text-align: center;
@@ -413,7 +412,7 @@ code {
 
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -20%);
 }
 
 .centered h1{
