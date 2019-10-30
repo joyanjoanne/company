@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>P01 - Style Guide Template</title>
+
+  <!--CSS-->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!--icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+
+  <nav class="nav-style">
+    <img  src="assets/image/logo.png" class="logo" alt="logo"/>
+    <p class="width-adjust"></p>
+    <a href="index.html"  class="nav-button">HOME</a>
+    <a href="product-listing.html" class="nav-button">COLLECTIONS</a>
+    <a href="product-listing.html" class="nav-button">FAVORITES</a>
+    <p class="width-adjust"></p>
+    <div class="search-field">
+      <img src="assets/image/search.png" class="search" alt="search"/>
+      <form> <input type="text" name="Search Field" value="Search"> </form>
+    </div>
+  </nav>
+
+
+  <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form-->
+  <section class="checkout-element">
+    <div class="row">
+      <div class="col-75">
+        <div class="payment-container">
+
+          <div class="row">
+            <div class="col-75">
+              <div class="container">
+
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="firstname">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <label for="adr">Address</label>
+                    <input type="text" id="adr" name="address">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <label class="checkbox-container">Shipping address same as billing<input type="checkbox" checked="checked"><span class="checkmark"></span></label>
+                <input type="submit" value="Continue to checkout" class="btn">
+              </div>
+            </div>
+            <div class="col-25">
+              <div class="container">
+                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> 1</span></h4><br>
+                <p>Coffee Roaster<span class="price">$29.99</span></p>
+                <hr>
+                <p>Subtotal<span class="price">$29.99</span></p>
+                <p>Shipment Fee<span class="price">$5</span></p>
+                <p>Estimated Tax<span class="price">$2.99</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$37.98</b></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site footer -->
+  <hr>
+  <footer class="site-footer">
+    <div class="row">
+      <div class="col-25">
+        <h5>CUSTOMER SERVICE</h5>
+        <ul class="footer-links">
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Return & Refund Policy</a></li>
+          <li><a href="#">Usage Instruction</a></li>
+        </ul>
+      </div>
+      <div class="col-25">
+        <h5>ABOUT US</h5>
+        <ul class="footer-links">
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Store location</a></li>
+        </ul>
+      </div>
+      <div class="col-25">
+        <h5>PROJECT LINK</h5>
+        <ul class="footer-links">
+          <li><a href="styleguide.html">Style Guide</a></li>
+          <li><a href="https://github.com/ivonnefedora/IAT339-P02">Git Repository</a></li>
+        </ul>
+      </div>
+    </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-50">
+          <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by
+            <a href="#">Joanne Fung & Ivonne Fedora</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
