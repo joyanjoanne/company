@@ -3,34 +3,33 @@
 
 <head>
   <meta charset="utf-8">
-  <title>P01 - Style Guide Template</title>
+  <title>Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--CSS-->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <!--FONT-->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
   <!--icon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!--Font-->
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-  <script src="assets/js/main.js"></script>
 </head>
-
 <body>
-
-  <nav class="nav-style">
-    <img  src="assets/image/logo.png" class="logo" alt="logo"/>
-    <p class="width-adjust"></p>
-    <a href="index.html"  class="nav-button">HOME</a>
-    <a href="product-listing.html" class="nav-button">COLLECTIONS</a>
-    <a href="product-listing.html" class="nav-button">FAVORITES</a>
-    <p class="width-adjust"></p>
-    <div class="search-field">
-      <img src="assets/image/search.png" class="search" alt="search"/>
-      <form> <input type="text" name="Search Field" value="Search"> </form>
-    </div>
-  </nav>
+  <header>
+    <nav class="nav-style">
+      <a href="index.html"><img  src="images/logo.png" class="logo" alt="logo"/></a>
+      <p class="width-adjust"></p>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html"  class="nav-button">HOME</a></li>
+        <li><a href="product.html" class="nav-button">PRODUCT</a></li>
+        <li><a href="concept.html" class="nav-button">ABOUT</a></li>
+        <li><a href="cart.html" class="nav-button  current-link">CART<!--<img src="images/cart.png" width="25">--></a></li>
+      </ul>
+    </nav>
+  </header>
 
 
   <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form-->
@@ -45,7 +44,7 @@
 
                 <div class="row">
                   <div class="col-50">
-                    <h3>Billing Address</h3>
+                    <h2>Billing Address</h2>
                     <label for="fname">Full Name</label>
                     <input type="text" id="fname" name="firstname">
                     <label for="email">Email</label>
@@ -68,8 +67,8 @@
                   </div>
 
                   <div class="col-50">
-                    <h3>Payment</h3>
-                    <label for="fname">Accepted Cards</label>
+                    <h2>Payment</h2>
+                    <label for="fname"><p>Accepted Cards</label>
                     <div class="icon-container">
                       <i class="fa fa-cc-visa" style="color:navy;"></i>
                       <i class="fa fa-cc-mastercard" style="color:red;"></i>
@@ -99,14 +98,15 @@
             </div>
             <div class="col-25">
               <div class="container">
-                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> 1</span></h4><br>
-                <p>Coffee Roaster<span class="price">$29.99</span></p>
+                <h2>Cart<span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> 1</span></h2><br>
+                <p>Exotic Yogurt Healthy Cake<span class="price">$85</span></p>
+                <p>Jade Bamboo Garden<span class="price">$58</span></p>
                 <hr>
-                <p>Subtotal<span class="price">$29.99</span></p>
-                <p>Shipment Fee<span class="price">$5</span></p>
-                <p>Estimated Tax<span class="price">$2.99</span></p>
+                <p>Subtotal<span class="price">$143</span></p>
+                <p>Shipment Fee<span class="price">$20</span></p>
+                <p>Estimated Tax<span class="price">$17.16</span></p>
                 <hr>
-                <p>Total <span class="price" style="color:black"><b>$37.98</b></span></p>
+                <p>Total <span class="price" style="color:black"><b>$180.16</b></span></p>
               </div>
             </div>
           </div>
