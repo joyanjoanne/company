@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P02</title>
+
+  <!--CSS-->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!--icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Javascript-->
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="nav-style">
+      <a href="index.html"><img  src="images/logo.png" class="logo" alt="logo"/></a>
+      <p class="width-adjust"></p>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="index.html"  class="nav-button">HOME</a></li>
+        <li><a href="product.html" class="nav-button">PRODUCT</a></li>
+        <li><a href="concept.html" class="nav-button">ABOUT</a></li>
+        <li><a href="cart.html" class="nav-button  current-link">CART<!--<img src="images/cart.png" width="25">--></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="styleguide-banner">
+    <h1>STYLEGUIDE</h1>
+    <p>The styleguide is a resource for designers, product managers, and developers, providing a common language around Split Leaf’s UI patterns.</p>
+  </div>
+
+  <!-- BAJU SECTION // -->
+  <section class="main" id="color_elements">
+    <h2>Poem Patisserie Elements</h2>
+
+    <section class="element">
+      <h3>What does the company do, or offer?</h3>
+      <p>Poem Patisserie is a cake company</p>
+      <h3>Who is the company to potential customers?</h3>
+      <p>Poem Patisserie targets the customers who likes pretty cakes</p>
+      <h3>Why might this company entice someone to purchase a product or service</h3>
+      <p>What sets Poem Patisserie apart from other cake shops are our originality, and our exquisite eye for details, this is what distinguishes and defines us.</p>
+    </section>
+
+    <section class="element">
+      <h3>Font</h3>
+      <h4>Muli</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tristique mi sed enim gravida pulvinar. Sed a enim a
+        justo hendrerit viverra. Suspendisse at nulla quis justo sagittis pulvinar.
+        Suspendisse at nulla quis justo sagittis pulvinar.</p>
+    </section>
+
+    <section class="element">
+      <h3>Color Palette</h3>
+      <div class="color-swatches">
+        <p class="main-color">Brand Color #526D83</p>
+        <p class="sub-color">Sub-Color #AAAAAA</p>
+        <p class="text-color">Body Text Color #333333</p>
+        <p class="highlight">Highlight Color #A57A5A</p>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>Art Direction</h3>
+          <h4>Clean</h4>
+          <p>The direction we will be going with is clean. The main color will be soft blue.</p>
+    </section>
+  </section>
+  <!-- // BAJU SECTION -->
+
+  <!-- INTERACTIVE ELEMENTS SECTION -->
+  <section class="main" id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+    <section class="element">
+      <h3>In-text link</h3>
+      <p>Concept | <a href="#" class="in-text-link">Simple is the new BOLD</a></p>
+
+      <h5>CSS selector:</h5>
+      <p>.in-text-link<br>.in-text-link:hover<br>.in-text-link:focus</p>
+
+      <h5>Source Code:</h5>
+      <code>&lt;a href="#" class="in-text-link"&gt;In-text Link&lt;/a&gt;
+      </code>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+      <a href="#"  class="nav-button">NAVIGATION BUTTON</a>
+
+      <h5>CSS selector:</h5>
+      <p>.nav-button<br>.nav-button:hover<br>.nav-button:focus</p>
+
+      <h5>Source Code:</h5>
+      <code>&lt;a href="#"  class="nav-button"&gt;NAVIGATION BUTTON&lt;/a&gt;</code>
+    </section>
+
+
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+      <!--https://www.w3schools.com/tags/tag_input.asp-->
+      <input type="submit" value="Submit" class="submit-btn">
+
+      <h5>CSS selector:</h5>
+      <p>.submit-btn</p>
+
+      <h5>Source Code:</h5>
+      <code>&lt;input type="submit" value="Submit"&gt;</code>
+    </section>
+
+
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+      <!--https://www.w3schools.com/tags/tag_input.asp-->
+      <label for="first-name">First name: </label><form><input id="first-name" type="text" name="Text Input Field" value="First Name"></form><br>
+      <label for="last-name">Last name: </label><form><input id="last-name" type="text" name="Text Input Field" value="Last Name"></form><br>
+
+      <h5>Source Code:</h5>
+      <code>&lt;label for="first-name"&gt;First name: &lt;/label&gt;&lt;form&gt;&lt;input type="text" name="Text Input Field value="First Name"&gt;&lt;/form&gt;&lt;br&gt;<br>
+        &lt;label for="last-name"&gt;Last name: &lt;/label&gt;&lt;form&gt;&lt;input type="text" name="Text Input Field value="Last Name"&gt;&lt;/form&gt;&lt;br&gt;</code>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <!--https://www.w3schools.com/tags/att_input_type_radio.asp-->
+        <p>Please select a size:</p>
+        <label class="radio-container" for="small"><input id="small" type="radio" name="size" value="small"/>  Small<span class="selected"></span></label>
+        <label class="radio-container" for="medium"><input id="medium" type="radio" name="size" value="medium"/>  Medium<span class="selected"></span></label>
+        <label class="radio-container" for="large"><input id="large" type="radio" name="size" value="large"/>  Large<span class="selected"></span></label>
+
+        <h5>CSS selector:</h5>
+        <p>.radio-container</p>
+
+        <h5>Source Code:</h5>
+        <code>
+          &lt;p&gt;Please select a size:&lt;/p&gt;<br>
+          &lt;label for="small"&gt;&lt;input id="small" type="radio" name="size" value="small"/&gt;Small&lt;/label&gt;<br>
+          &lt;label for="medium"&gt;&lt;input id="medium" type="radio" name="size" value="medium"/&gt;Medium&lt;/label&gt;<br>
+          &lt;label for="large"&gt;&lt;input id="large" type="radio" name="size" value="large"/&gt;Large&lt;/label&gt;<br>
+        </code>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <!--Image citation: https://www.flaticon.com/authors/google
+        Code citation: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image-->
+        <div class="product-grid">
+          <div class="row">
+            <div class="col-25">
+              <div class="perfume">
+                <a href="https://www.google.com">
+                <img src="images/waffle.jpg" alt="rose perfume" width="20%"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h5>CSS selector:</h5>
+        <p>&lt;img&gt;</p>
+
+        <h5>Source Code:</h5>
+        <code>
+          &lt;a href="https://www.google.com"&gt;&lt;img src="images/waffle.png" alt="google"&gt;&lt;/a&gt;
+        </code>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section class="main" id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h2 class="no-margin">Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+
+        <h5>CSS selector:</h5>
+        <p>&lt;h2&gt;<br>&lt;h3&gt;<br>&lt;h4&gt;<br>&lt;h5&gt;</p>
+
+        <h5>Source Code:</h5>
+        <code>
+          &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+          &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+          &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+          &lt;h5&gt;Heading 5&lt;/h5&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Turpis egestas pretium aenean pharetra. Aliquam faucibus purus in massa tempor nec feugiat nisl. In tellus integer feugiat scelerisque varius.Quam viverra orci sagittis eu volutpat odio facilisis mauris. Blandit cursus risus at ultrices mi tempus imperdiet. Tortor condimentum lacinia quis vel. Sit amet consectetur adipiscing elit duis. Augue interdum velit euismod in pellentesque massa placerat. Cras fermentum odio eu feugiat pretium nibh ipsum. Cras ornare arcu dui vivamus arcu felis. Eget gravida cum sociis natoque penatibus et. Dolor sit amet consectetur adipiscing. Ut pharetra sit amet aliquam id diam. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet.</p>
+
+        <h5>CSS selector:</h5>
+        <p>&lt;p&gt;</p>
+
+        <h5>Source Code:</h5>
+        <code>
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Turpis egestas pretium aenean pharetra. Aliquam faucibus purus in massa tempor nec feugiat nisl. In tellus integer feugiat scelerisque varius.Quam viverra orci sagittis eu volutpat odio facilisis mauris. Blandit cursus risus at ultrices mi tempus imperdiet. Tortor condimentum lacinia quis vel. Sit amet consectetur adipiscing elit duis. Augue interdum velit euismod in pellentesque massa placerat. Cras fermentum odio eu feugiat pretium nibh ipsum. Cras ornare arcu dui vivamus arcu felis. Eget gravida cum sociis natoque penatibus et. Dolor sit amet consectetur adipiscing. Ut pharetra sit amet aliquam id diam. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet.&lt;/p&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <ol>
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+        </ol>
+
+        <h5>CSS selector:</h5>
+        <p>&lt;ol&gt;</p>
+
+        <h5>Source Code:</h5>
+        <code>
+          &lt;ol&gt;<br>
+          &lt;li&gt;one&lt;/li&gt;<br>
+          &lt;li&gt;two&lt;/li&gt;<br>
+          &lt;li&gt;three&lt;/li&gt;<br>
+          &lt;/ol&gt;
+        </code>
+
+
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section class="main" id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <header>
+          <nav class="nav-style">
+            <a href="index.html"><img  src="images/logo.png" class="logo" alt="logo"/></a>
+            <p class="width-adjust"></p>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="index.html"  class="nav-button">HOME</a></li>
+              <li><a href="product.html" class="nav-button">PRODUCT</a></li>
+              <li><a href="concept.html" class="nav-button">ABOUT</a></li>
+              <li><a href="cart.html" class="nav-button  current-link">CART<!--<img src="images/cart.png" width="25">--></a></li>
+            </ul>
+          </nav>
+        </header>
+
+
+        <h5>CSS selector:</h5>
+        <p>.button-nav</p>
+
+        <h5>Source Code:</h5>
+        <code>
+          &lt;nav&gt;<br>
+          &lt;a class="button-nav" href="#home"&gt;Home&lt;/a&gt;<br>
+          &lt;a class="button-nav" href="#menu"&gt;Menu&lt;/a&gt;<br>
+          &lt;a class="button-nav" href="#contact"&gt;Contact&lt;/a&gt;<br>
+          &lt;a class="button-nav" href="#about"&gt;About&lt;/a&gt;<br>
+          &lt;/nav&gt;
+        </code>
+      </section>
+      </section>
+
+      <section class="element">
+        <section class="product-grid">
+          <div class="row">
+            <div class="col-25">
+              <div class="card">
+                <a href="product.html">
+                  <img src="images/yogurt.jpg" alt="Yogurt" style="width:100%">
+                </a>
+                <p class="card-text">Exotic Yogurt Healthy Cake</p>
+                <p class="price">$85</p>
+              </div>
+            </div>
+
+            <div class="col-25">
+              <div class="card">
+                <a href="product.html">
+                  <img src="images/jade.jpg" alt="Jade" style="width:100%">
+                </a>
+                <p class="card-text">Jade Bamboo Garden</p>
+                <p class="price">$58</p>
+              </div>
+            </div>
+
+            <div class="col-25">
+              <div class="card">
+                <a href="product.html">
+                  <img src="images/pearldragon.jpg" alt="Pearl Dragon" style="width:100%">
+                </a>
+                <p class="card-text">Pearl Dragon</p>
+                <p class="price">$58</p>
+              </div>
+            </div>
+
+            <div class="col-25">
+              <div class="card">
+                <a href="product.html">
+                  <img src="images/waffle.jpg" alt="Waffle" style="width:100%">
+                </a>
+                <p class="card-text">Hong Kong Style Waffle</p>
+                <p class="price">$95</p>
+              </div>
+            </div>
+          </div>
+        </section>
+          </section>
+
+          <h5>CSS selector:</h5>
+          <p>img.product-img<br>.perfume-items<br>.perfumes<br>.product-list</p>
+
+          <h5>Source Code:</h5>
+          <code>&lt;div class="product-list"&gt;<br>
+            &lt;div class="perfume"&gt;<br>
+            &lt;img src="assets/img/product1.jpg class="product-img perfume-items" alt="rose perfume"/&gt;<br>
+            &lt;a href ="#"  class="in-text-link perfume-items"&gt;Rose perfume&lt;/a&gt;<br>
+            &lt;p class="perfume-items"&gt;$35&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="perfume"&gt;<br>
+            &lt;img src="assets/img/product2.jpg class="product-img perfume-items" alt="pistachio perfume"/&gt;<br>
+            &lt;a href ="#"  class="in-text-link perfume-items"&gt;Pistachio perfume&lt;/a&gt;<br>
+            &lt;p class="perfume-items"&gt;$37&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="perfume"&gt;<br>
+            &lt;img src="img/product3.jpg class="product-img perfume-items" alt="oud perfume"/&gt;<br>
+            &lt;a href ="#"  class="in-text-link perfume-items"&gt;Oud perfume&lt;/a&gt;<br>
+            &lt;p class="perfume-items"&gt;$38&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;</code>
+        </section>
+
+        <section class="element">
+          <h3>Payment Form</h3>
+
+          <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form-->
+          <div class="row">
+            <div class="col-75">
+              <div class="payment-container">
+                <form action="#">
+
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname">Full Name</label>
+                      <input type="text" id="fname" name="firstname" class="payment">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" class="payment">
+                      <label for="adr">Address</label>
+                      <input type="text" id="adr" name="address" class="payment">
+                      <label for="city">City</label>
+                      <input type="text" id="city" name="city" class="payment">
+
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" class="payment">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" class="payment">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" class="payment">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" class="payment">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" class="payment">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" class="payment">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" class="payment">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <label class="checkbox-container">Shipping address same as billing<input type="checkbox" checked="checked"><span class="checkmark"></span></label>
+                  <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <h5>CSS selector:</h5>
+          <p>.payment-container<br>.icon-container<br>.btn<br>.checkbox-container</p>
+
+          <h5>Source Code:</h5>
+          <code>
+            &lt;div class="row"&gt;<br>
+            &lt;div class="col-75"&gt;<br>
+            &lt;div class="container"&gt;<br>
+            &lt;form action="#"&gt;<br>
+            &lt;div class="row"&gt;<br>
+            &lt;div class="col-50"&gt;<br>
+            &lt;h3&gt;Billing Address&lt;/h3&gt;<br>
+            &lt;label for="fname"&gt;Full Name&lt;/label&gt;<br>
+            &lt;input type="text" id="fname" name="firstname" placeholder="John M. Doe"&gt;<br>
+            &lt;label for="email"&gt;Email&lt;/label&gt;<br>
+            &lt;input type="text" id="email" name="email" placeholder="john@example.com"&gt;<br>
+            &lt;label for="adr"&gt;Address&lt;/label&gt;<br>
+            &lt;input type="text" id="adr" name="address" placeholder="542 W. 15th Street"&gt;<br>
+            &lt;label for="city"&gt;City&lt;/label&gt;<br>
+            &lt;input type="text" id="city" name="city" placeholder="New York"&gt;<br><br>
+
+            &lt;div class="row"&gt;<br>
+            &lt;div class="col-50"&gt;<br>
+            &lt;label for="state"&gt;State&lt;/label&gt;<br>
+            &lt;input type="text" id="state" name="state" placeholder="NY"&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="col-50"&gt;<br>
+            &lt;label for="zip"&gt;Zip&lt;/label&gt;<br>
+            &lt;input type="text" id="zip" name="zip" placeholder="10001&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br><br>
+
+            &lt;div class="col-50"&gt;<br>
+            &lt;h3&gt;Payment&lt;/h3&gt;<br>
+            &lt;label for="fname"&gt;Accepted Cards&lt;/label&gt;<br>
+            &lt;div class="icon-container"&gt;<br>
+            &lt;i class="fa fa-cc-visa" style="color:navy;"&gt;&lt;/i&gt;<br>
+            &lt;i class="fa fa-cc-mastercard" style="color:red;"&gt;&lt;/i&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;label for="cname"&gt;Name on Card&lt;/label&gt;<br>
+            &lt;input type="text" id="cname" name="cardname"&gt;<br>
+            &lt;label for="ccnum"&gt;Credit card number&lt;/label&gt;<br>
+            &lt;input type="text" id="ccnum" name="cardnumber"&gt;<br>
+            &lt;label for="expmonth"&gt;Exp Month&lt;/label&gt;<br>
+            &lt;input type="text" id="expmonth" name="expmonth"&gt;<br>
+            &lt;div class="row"&gt;<br>
+            &lt;div class="col-50"&gt;<br>
+            &lt;label for="expyear"&gt;Exp Year&lt;/label&gt;<br>
+            &lt;input type="text" id="expyear" name="expyear"&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="col-50"&gt;<br>
+            &lt;label for="cvv">CVV&lt;/label&gt;<br>
+            &lt;input type="text" id="cvv" name="cvv"&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;
+          </code>
+        </section>
+
+        <section class="element">
+          <h3>Checkout Cart</h3>
+
+          <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form-->
+          <div class="col-25">
+            <div class="payment-container">
+              <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i>3</span></h4><br>
+              <p>Product 1<span class="price">$5</span></p>
+              <p>Product 2<span class="price">$5</span></p>
+              <p>Product 3<span class="price">$5</span></p>
+              <hr>
+              <p>Total <span class="price" style="color:black"><b>$15</b></span></p>
+            </div>
+          </div>
+
+          <h5>CSS selector:</h5>
+          <p>.payment-container<br>.price</p>
+
+          <h5>Source Code:</h5>
+          <code>
+            &lt;div class="col-25"&gt;<br>
+            &lt;div class="container"&gt;<br>
+            &lt;h4&gt;Cart &lt;span class="price" style="color:black"&gt;&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;<br>   3&lt;/span&gt;&lt;/h4&gt;&lt;br&gt;<br>
+            &lt;p&gt;&lt;a href="#"&gt;Product 1&lt;/a&gt; &lt;span class="price"&gt;$5&lt;/span&gt;&lt;/p&gt;<br>
+            &lt;p&gt;&lt;a href="#"&gt;Product 2&lt;/a&gt; &lt;span class="price"&gt;$5&lt;/span&gt;&lt;/p&gt;<br>
+            &lt;p&gt;&lt;a href="#"&gt;Product 3&lt;/a&gt; &lt;span class="price"&gt;$5&lt;/span&gt;&lt;/p&gt;<br>
+            &lt;hr&gt;<br>
+            &lt;p&gt;Total &lt;span class="price" style="color:black"&gt;&lt;b&gt;$15&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+          </code>
+
+        </section>
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+      <section class="main" id="citations">
+        <h2>Citations</h2>
+
+        <ul>
+          <li>Adams, Vernon. Designer. N/A. Monda [Font]. Retrieved from <a href="https://fonts.googleapis.com/css?family=Monda&display=swap">https://fonts.googleapis.com/css?family=Monda&display=swap</a>.</li>
+          <li>Dziedzic, Łukasz. Designer. 2010. Lato [Font]. Retrieved from <a href="https://fonts.googleapis.com/css?family=Lato&display=swap">https://fonts.googleapis.com/css?family=Lato&display=swap</a>.</li>
+          <li>Google. N/A. N/A. Monochrome [Icon]. Retrieved from <a href="https://www.flaticon.com/authors/google">https://www.flaticon.com/authors/google</a>.</li>
+          <li>Urban Outfitters. N/A. N/A. V-Neck Cami [Media]. Retrieved from <a href="https://www.urbanoutfitters.com/en-ca/shop/uo-ella-ruched-peplum-v-neck-cami2?color=083&quantity=1&recommendation=dyrectray-NewArrivals&type=REGULAR">https://www.urbanoutfitters.com/en-ca/shop/uo-ella-ruched-peplum-v-neck-cami2?color=083&quantity=1&recommendation=dyrectray-NewArrivals&type=REGULAR</a>.</li>
+          <li>W3Schools. N/A. N/A. Checkout Form [Tutorial]. Retrieved from <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form</a>.</li>
+          <li>W3Schools. N/A. N/A. Input [Tutorial]. Retrieved from <a href="https://www.w3schools.com/tags/tag_input.asp">https://www.w3schools.com/tags/tag_input.asp</a>.</li>
+          <li>W3Schools. N/A. N/A. Link Images [Tutorial]. Retrieved from <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image">https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image</a>.</li>
+          <li>W3Schools. N/A. N/A. NavBar [Tutorial]. Retrieved from <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_basic_html">https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_basic_html</a>.</li>
+          <li>W3Schools. N/A. N/A. Product Card [Tutorial]. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_product_card.asp">https://www.w3schools.com/howto/howto_css_product_card.asp</a>.</li>
+          <li>W3Schools. N/A. N/A. Type Radio [Tutorial]. Retrieved from <a href="https://www.w3schools.com/tags/att_input_type_radio.asp">https://www.w3schools.com/tags/att_input_type_radio.asp</a>.</li>
+        </ul>
+
+      </section>
+
+      <!-- Site footer -->
+      <hr>
+      <footer class="site-footer">
+        <div class="row">
+          <div class="col-25">
+            <h5>CUSTOMER SERVICE</h5>
+            <ul class="footer-links">
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Return & Refund Policy</a></li>
+              <li><a href="#">Usage Instruction</a></li>
+            </ul>
+          </div>
+          <div class="col-25">
+            <h5>ABOUT US</h5>
+            <ul class="footer-links">
+              <li><a href="#">Our Company</a></li>
+              <li><a href="#">Store location</a></li>
+            </ul>
+          </div>
+          <div class="col-25">
+            <h5>PROJECT LINK</h5>
+            <ul class="footer-links">
+              <li><a href="styleguide.html">Style Guide</a></li>
+              <li><a href="https://github.com/ivonnefedora/IAT339-P02">Git Repository</a></li>
+            </ul>
+          </div>
+        </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-50">
+              <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by
+                <a href="#">Joanne Fung & Ivonne Fedora</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>

@@ -22,7 +22,7 @@ img:hover{
 /*--------------------------HEADER----------------------------------*/
 header {
 	width: 100%;
-	height: 3em;
+	height: 10em;
 	line-height: 1.6;
 	text-align: center;
 	color: #81D8D0;
@@ -41,7 +41,7 @@ a.nav-button.current-link{
 	padding: 2rem;
 	background-color: #FFFFFF;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
 }
 
 .nav-style ul {
@@ -50,12 +50,14 @@ a.nav-button.current-link{
   list-style: none;
   overflow: hidden;
   background-color: #FFFFFF;
+	z-index: 2;
 }
 
 .nav-style li a {
   padding: 2em;
   text-decoration: none;
   background-color: #FFFFFF;
+	z-index: 3;
 }
 
 .nav-style .logo {
@@ -63,6 +65,7 @@ a.nav-button.current-link{
   float: left;
   font-size: 2em;
   text-decoration: none;
+	z-index: 4;
 }
 
 /* menu */
